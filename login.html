@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>login.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #e8bf6a;}
+.s2 { color: #bababa;}
+.s3 { color: #a5c261;}
+.s4 { color: #a9b7c6;}
+.s5 { color: #cc7832;}
+.s6 { color: #6a8759;}
+.s7 { color: #6897bb;}
+.s8 { color: #cc7832; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+login.html</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s1">&gt;&lt;html&gt;</span>
+<span class="s1">&lt;head&gt;</span>
+    <span class="s1">&lt;meta </span><span class="s2">charset</span><span class="s3">=utf-8</span><span class="s1">&gt;</span>
+    <span class="s1">&lt;meta </span><span class="s2">name</span><span class="s3">=viewport </span><span class="s2">content</span><span class="s3">=&quot;width=device-width,initial-scale=1,user-scalable=no&quot;</span><span class="s1">&gt;</span>
+    <span class="s1">&lt;title&gt;</span><span class="s4">智慧广电管理系统</span><span class="s1">&lt;/title&gt;</span>
+    <span class="s1">&lt;style&gt;</span>
+        <span class="s5">*</span><span class="s4">{</span>
+            <span class="s2">font-family</span><span class="s4">: </span><span class="s1">Helvetica Neue</span><span class="s5">,</span><span class="s1">Helvetica</span><span class="s5">,</span><span class="s1">PingFang SC</span><span class="s5">,</span><span class="s1">Hiragino Sans GB</span><span class="s5">,</span><span class="s1">Microsoft YaHei</span><span class="s5">,</span><span class="s6">&quot;\5FAE\8F6F\96C5\9ED1&quot;</span><span class="s5">,</span><span class="s1">Arial</span><span class="s5">,</span><span class="s3">sans-serif</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s3">x-small</span><span class="s5">;</span>
+            <span class="s2">-webkit-tap-highlight-color</span><span class="s4">: </span><span class="s3">transparent</span><span class="s5">;</span>
+        <span class="s4">}</span>
+    <span class="s4">.</span><span class="s1">wrapper</span><span class="s4">{</span>
+        <span class="s2">position</span><span class="s4">: </span><span class="s3">fixed</span><span class="s5">;</span>
+        <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+        <span class="s2">height</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+        <span class="s2">top</span><span class="s4">: </span><span class="s7">0</span><span class="s5">;</span>
+        <span class="s2">left</span><span class="s4">: </span><span class="s7">0</span><span class="s5">;</span>
+        <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+        <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+        <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+        <span class="s2">-webkit-box-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s2">-ms-flex-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s2">justify-content</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s2">overflow</span><span class="s4">: </span><span class="s3">auto</span><span class="s5">;</span>
+        <span class="s2">background</span><span class="s4">: </span><span class="s7">#ededf2</span><span class="s5">;</span>
+    <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">container</span><span class="s4">{</span>
+            <span class="s2">margin-left</span><span class="s4">: </span><span class="s7">35</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">position</span><span class="s4">: </span><span class="s3">absolute</span><span class="s5">;</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">25</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">top</span><span class="s4">: </span><span class="s7">0</span><span class="s5">;</span>
+            <span class="s2">left</span><span class="s4">: </span><span class="s7">0</span><span class="s5">;</span>
+            <span class="s2">overflow-x</span><span class="s4">: </span><span class="s3">hidden</span><span class="s5">;</span>
+            <span class="s2">overflow-y</span><span class="s4">: </span><span class="s3">auto</span><span class="s5">;</span>
+            <span class="s2">-webkit-transition</span><span class="s4">: </span><span class="s3">all </span><span class="s7">.5</span><span class="s3">s </span><span class="s1">cubic-bezier</span><span class="s4">(</span><span class="s7">.55</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">.1</span><span class="s5">,</span><span class="s7">1</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">transition</span><span class="s4">: </span><span class="s3">all </span><span class="s7">.5</span><span class="s3">s </span><span class="s1">cubic-bezier</span><span class="s4">(</span><span class="s7">.55</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">.1</span><span class="s5">,</span><span class="s7">1</span><span class="s4">)</span><span class="s5">;</span>
+
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">pic</span><span class="s4">{</span>
+            <span class="s2">background-image</span><span class="s4">: </span><span class="s1">url</span><span class="s4">(</span><span class="s6">&quot;poster.png&quot;</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">min-height</span><span class="s4">: </span><span class="s7">300</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">background-size</span><span class="s4">: </span><span class="s7">100</span><span class="s4">% </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">loginBox</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s3">inherit</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">justify-content</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">background-color</span><span class="s4">: </span><span class="s3">white</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">dofLog</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">79</span><span class="s4">%</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">inputBox</span><span class="s4">{</span>
+            <span class="s2">margin-top</span><span class="s4">: </span><span class="s7">10</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">25</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">background</span><span class="s4">: </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">227</span><span class="s5">,</span><span class="s7">231</span><span class="s5">,</span><span class="s7">237</span><span class="s5">,</span><span class="s7">.44</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">border-radius</span><span class="s4">: </span><span class="s7">50</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">-ms-flex-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">justify-content</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">dInput</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">90</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-align</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">-ms-flex-align</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">align-items</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">dInput input</span><span class="s4">{</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">40</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">-ms-flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">border</span><span class="s4">: </span><span class="s3">none</span><span class="s5">;</span>
+            <span class="s2">padding</span><span class="s4">: </span><span class="s7">0 10</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">color</span><span class="s4">: </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">0</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">.85</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s7">16</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">outline</span><span class="s4">: </span><span class="s3">none</span><span class="s5">;</span>
+            <span class="s2">background-color</span><span class="s4">: </span><span class="s3">transparent</span><span class="s8">!important</span><span class="s5">;</span>
+            <span class="s2">font-family</span><span class="s4">: </span><span class="s1">Helvetica Neue</span><span class="s5">,</span><span class="s1">Helvetica</span><span class="s5">,</span><span class="s1">PingFang SC</span><span class="s5">,</span><span class="s1">Hiragino Sans GB</span><span class="s5">,</span><span class="s1">Microsoft YaHei</span><span class="s5">,</span><span class="s6">&quot;\5FAE\8F6F\96C5\9ED1&quot;</span><span class="s5">,</span><span class="s1">Arial</span><span class="s5">,</span><span class="s3">sans-serif</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s3">x-small</span><span class="s5">;</span>
+            <span class="s2">-webkit-tap-highlight-color</span><span class="s4">: </span><span class="s3">transparent</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">pwBox</span><span class="s4">{</span>
+            <span class="s2">margin-top</span><span class="s4">: </span><span class="s7">5</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">25</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">background</span><span class="s4">: </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">227</span><span class="s5">,</span><span class="s7">231</span><span class="s5">,</span><span class="s7">237</span><span class="s5">,</span><span class="s7">.44</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">border-radius</span><span class="s4">: </span><span class="s7">23</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">-ms-flex-pack</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">justify-content</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">dPwbox</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">90</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-align</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">-ms-flex-align</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">align-items</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">dPwbox input</span><span class="s4">{</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">40</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">-ms-flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">flex</span><span class="s4">: </span><span class="s7">1</span><span class="s5">;</span>
+            <span class="s2">border</span><span class="s4">: </span><span class="s3">none</span><span class="s5">;</span>
+            <span class="s2">padding</span><span class="s4">: </span><span class="s7">0 10</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">color</span><span class="s4">: </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">0</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">0</span><span class="s5">,</span><span class="s7">.85</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s7">16</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">outline</span><span class="s4">: </span><span class="s3">none</span><span class="s5">;</span>
+            <span class="s2">background-color</span><span class="s4">: </span><span class="s3">transparent</span><span class="s8">!important</span><span class="s5">;</span>
+            <span class="s2">font-family</span><span class="s4">: </span><span class="s1">Helvetica Neue</span><span class="s5">,</span><span class="s1">Helvetica</span><span class="s5">,</span><span class="s1">PingFang SC</span><span class="s5">,</span><span class="s1">Hiragino Sans GB</span><span class="s5">,</span><span class="s1">Microsoft YaHei</span><span class="s5">,</span><span class="s6">&quot;\5FAE\8F6F\96C5\9ED1&quot;</span><span class="s5">,</span><span class="s1">Arial</span><span class="s5">,</span><span class="s3">sans-serif</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s3">x-small</span><span class="s5">;</span>
+            <span class="s2">-webkit-tap-highlight-color</span><span class="s4">: </span><span class="s3">transparent</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">pwSee</span><span class="s4">{</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">40</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">40</span><span class="s3">px</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">forgetPw</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-webkit-box</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">-ms-flexbox</span><span class="s5">;</span>
+            <span class="s2">display</span><span class="s4">: </span><span class="s3">flex</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-pack</span><span class="s4">: </span><span class="s3">end</span><span class="s5">;</span>
+            <span class="s2">-ms-flex-pack</span><span class="s4">: </span><span class="s3">end</span><span class="s5">;</span>
+            <span class="s2">justify-content</span><span class="s4">: </span><span class="s3">flex-end</span><span class="s5">;</span>
+        <span class="s4">}</span>
+        <span class="s4">.</span><span class="s1">subBtn</span><span class="s4">{</span>
+            <span class="s2">width</span><span class="s4">: </span><span class="s7">100</span><span class="s4">%</span><span class="s5">;</span>
+            <span class="s2">height</span><span class="s4">: </span><span class="s7">46</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">line-height</span><span class="s4">: </span><span class="s7">46</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">font-size</span><span class="s4">: </span><span class="s7">18</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">color</span><span class="s4">: </span><span class="s7">#fff</span><span class="s5">;</span>
+            <span class="s2">border-radius</span><span class="s4">: </span><span class="s7">23</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">background</span><span class="s4">: </span><span class="s1">linear-gradient</span><span class="s4">(</span><span class="s7">135</span><span class="s3">deg</span><span class="s5">,</span><span class="s7">#3660f1</span><span class="s5">,</span><span class="s7">#429cff</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">-webkit-box-shadow</span><span class="s4">: </span><span class="s7">0 4</span><span class="s3">px </span><span class="s7">6</span><span class="s3">px </span><span class="s7">0 </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">65</span><span class="s5">,</span><span class="s7">172</span><span class="s5">,</span><span class="s7">255</span><span class="s5">,</span><span class="s7">.2</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">box-shadow</span><span class="s4">: </span><span class="s7">0 4</span><span class="s3">px </span><span class="s7">6</span><span class="s3">px </span><span class="s7">0 </span><span class="s1">rgba</span><span class="s4">(</span><span class="s7">65</span><span class="s5">,</span><span class="s7">172</span><span class="s5">,</span><span class="s7">255</span><span class="s5">,</span><span class="s7">.2</span><span class="s4">)</span><span class="s5">;</span>
+            <span class="s2">text-align</span><span class="s4">: </span><span class="s3">center</span><span class="s5">;</span>
+            <span class="s2">letter-spacing</span><span class="s4">: </span><span class="s7">5</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">margin-top</span><span class="s4">: </span><span class="s7">10</span><span class="s3">px</span><span class="s5">;</span>
+            <span class="s2">cursor</span><span class="s4">: </span><span class="s3">pointer</span><span class="s5">;</span>
+        <span class="s4">}</span>
+
+    <span class="s1">&lt;/style&gt;</span>
+    <span class="s1">&lt;script </span><span class="s2">src</span><span class="s3">=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;</span><span class="s1">&gt;&lt;/script&gt;</span>
+<span class="s1">&lt;/head&gt;</span>
+<span class="s1">&lt;body&gt;</span>
+<span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;wrapper&quot;</span><span class="s1">&gt;</span>
+    <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s1">&gt;</span>
+        <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;pic&quot;</span><span class="s1">&gt;</span>
+            <span class="s1">&lt;div&gt;&lt;/div&gt;</span>
+        <span class="s1">&lt;/div&gt;</span>
+        <span class="s1">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;loginBox&quot;</span><span class="s1">&gt;</span>
+            <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dofLog&quot;</span><span class="s1">&gt;</span>
+                <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;inputBox&quot;</span><span class="s1">&gt;</span>
+                    <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dInput&quot;</span><span class="s1">&gt;</span>
+                        <span class="s1">&lt;input </span><span class="s2">placeholder</span><span class="s3">=&quot;请输入账号&quot; </span><span class="s2">type</span><span class="s3">=&quot;text&quot; </span><span class="s2">maxlength</span><span class="s3">=&quot;30&quot;</span><span class="s1">&gt;</span>
+                    <span class="s1">&lt;/div&gt;</span>
+                <span class="s1">&lt;/div&gt;</span>
+                <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;pwBox&quot;</span><span class="s1">&gt;</span>
+                    <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dPwbox&quot;</span><span class="s1">&gt;</span>
+                        <span class="s1">&lt;input </span><span class="s2">placeholder</span><span class="s3">=&quot;请输入密码&quot; </span><span class="s2">v-bind</span><span class="s3">=&quot; type='' maxlength=&quot;</span><span class="s2">30</span><span class="s4">&quot;&gt;</span>
+                        <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;pwSee&quot; </span><span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s3">=&quot;seen?ceye:oeye&quot; </span><span class="s1">&gt;&lt;/div&gt;</span>
+                    <span class="s1">&lt;/div&gt;</span>
+                <span class="s1">&lt;/div&gt;</span>
+                <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;forgetPw&quot;</span><span class="s1">&gt;&lt;div&gt;</span><span class="s4">忘记密码</span><span class="s1">&lt;/div&gt;&lt;/div&gt;</span>
+
+                <span class="s1">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;subBtn&quot;</span><span class="s1">&gt;</span><span class="s4">登录</span><span class="s1">&lt;/div&gt;</span>
+            <span class="s1">&lt;/div&gt;</span>
+        <span class="s1">&lt;/div&gt;</span>
+    <span class="s1">&lt;/div&gt;</span>
+<span class="s1">&lt;/div&gt;</span>
+
+<span class="s1">&lt;script&gt;</span>
+    <span class="s5">var </span><span class="s0">eye = </span><span class="s5">new </span><span class="s0">Vue({</span>
+        <span class="s0">el:</span><span class="s6">'.dPwbox'</span><span class="s5">,</span>
+        <span class="s0">data:{</span>
+            <span class="s0">seen:</span><span class="s5">false,</span>
+            <span class="s0">pw:</span><span class="s6">'password'</span><span class="s5">,</span>
+            <span class="s0">txt:</span><span class="s6">'text'</span><span class="s5">,</span>
+            <span class="s0">ceye:</span><span class="s6">'ceye.jpg'</span><span class="s5">,</span>
+            <span class="s0">oeye:</span><span class="s6">'oeye.jpg'</span>
+        <span class="s4">}</span><span class="s5">,</span>
+        <span class="s0">method:{</span>
+            <span class="s0">changeType:</span><span class="s5">function </span><span class="s4">() {</span>
+                <span class="s5">if</span><span class="s4">(</span><span class="s5">this</span><span class="s4">.seen===</span><span class="s5">false</span><span class="s4">){</span>
+                    <span class="s5">this</span><span class="s4">.pw=</span><span class="s6">'password'</span><span class="s5">, this</span><span class="s4">.ceye=</span><span class="s6">'ceye.jpg'</span>
+                <span class="s4">}</span><span class="s5">else</span><span class="s4">{</span>
+                    <span class="s0">ceye=</span><span class="s6">'ceye.jpg'</span><span class="s5">, </span><span class="s0">oeye=</span><span class="s6">'oeye.jpg'</span>
+                <span class="s4">}</span>
+            <span class="s4">}</span>
+        <span class="s4">}</span>
+    <span class="s4">})</span>
+
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;</span></pre>
+</body>
+</html>
